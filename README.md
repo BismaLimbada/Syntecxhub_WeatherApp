@@ -1,16 +1,15 @@
-# React + Vite
+# Syntecxhub Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, glassmorphic weather dashboard built with React and Vite for the Week 1 Web Development internship task. This application connects directly to the OpenWeatherMap API to deliver live weather observations and extended forecasts.
 
-Currently, two official plugins are available:
+## Features
+* **Live Weather Data**: Real-time stats including temperature, humidity, wind speed, and dynamic condition descriptions.
+* **5-Day Forecast Grid**: Clean breakdown of coming conditions utilizing modular item mappings.
+* **Dynamic Glassmorphic Theme**: Interface background shifts automatically based on localized weather variations (sunny, rainy, cloudy, etc.).
+* **Responsive Layout**: Fluid CSS design optimized for desktop screens and mobile interfaces.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+* **Frontend Framework**: React (Vite template)
+* **Styling**: Pure CSS3
+* **Data Provider**: OpenWeatherMap API
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
