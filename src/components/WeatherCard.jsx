@@ -8,10 +8,19 @@ function WeatherCard({ data }) {
         <h2>{name}</h2>
         <p className="weather-desc">{weather[0].description}</p>
       </div>
+      
       <div className="card-body">
         <img src={iconUrl} alt={weather[0].description} className="weather-icon" />
-        <h1 className="temperature">{Math.round(main.temp)}°C</h1>
+        <div className="temp-display-container">
+          {/* Current Temperature */}
+          <h1 className="temperature">{Math.round(main.temp)}°C</h1>
+          {/* Highest and Lowest Temp Display */}
+          <p className="temp-range">
+            H: {Math.round(main.temp_max)}°C &nbsp;•&nbsp; L: {Math.round(main.temp_min)}°C
+          </p>
+        </div>
       </div>
+
       <div className="card-footer">
         <div className="info-block">
           <span className="label">Feels Like</span>
